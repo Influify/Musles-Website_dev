@@ -4,8 +4,8 @@ import Client from "shopify-buy";
 const ShopContext = React.createContext();
 
 const client = Client.buildClient({
-  storefrontAccessToken: "b0ce81d4056a180c1e5e754a11f58dbb",
-  domain: "musles-apparel.myshopify.com"
+  storefrontAccessToken: "dd4d4dc146542ba7763305d71d1b3d38",
+  domain: "graphql.myshopify.com"
 });
 
 class ShopProvider extends Component {

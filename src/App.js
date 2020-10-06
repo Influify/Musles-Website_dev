@@ -7,6 +7,8 @@ import ShopProvider from "./context/shopContext";
 
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
+import MerchPage from "./pages/Merch";
+import ContentSelectionPage from "./pages/Content";
 import NoMatch from "./pages/NoMatch";
 import Header from "./components/Navbar";
 import Cart from "./components/Cart";
@@ -28,6 +30,12 @@ const App = () => {
             </Route>
             <Route exact path="/">
               <HomePage />
+            </Route>
+            <Route exact path="/content">
+              <ContentSelectionPage />
+            </Route>
+            <Route exact path="/merch">
+              <MerchPage />
             </Route>
             <Route path="*" component={NoMatch} />
           </Switch>
